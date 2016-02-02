@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drawsome</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+<script src="js/easeljs-0.8.1.min.js"></script>
+
+</head>
+<body>
+<div id="mobileMsg">
+	<img src="images/logo.png" alt="app logo">
+	<p>I'm sorry, Drawsome is only available on desktop.</p>
+</div>
+<div id="container">
+	<h1 class="hidden">Welcome to Drawsome</h1>
+	<div class="menu" id="mainMenu">
+		<h2 class="hidden">Main Menu</h2>
+		<img class="logo" src="images/logo.png" alt="app logo">
+		<ul>
+			<li id="new"><img src="images/new.svg" alt="new canvas"></li>
+			<li id="export"><img id="export" src="images/export.svg" alt="export canvas"></li>
+			<li id="brushMenu"><div class="sprite"></div></li>
+			<li id="colorPalMenu"><div class="sprite"></div></li>
+			<li id="eraser"><div class="sprite"></div></li>
+			<li id="stampMenu"><div class="sprite"></div></li>
+			<li><p id="iconName"></p></li>
+		</ul>
+	</div>
+	<div class="menu sub" id="color">
+		<h2 class="hidden">Color Menu</h2>
+		<ul>
+			<li id="black"><img src="images/black_swatch.svg" alt="black color swatch"></li>
+			<li id="red"><img src="images/red_swatch.svg" alt="red color swatch"></li>
+			<li id="blue"><img src="images/blue_swatch.svg" alt="blue color swatch"></li>
+			<li id="yellow"><img src="images/yellow_swatch.svg" alt="yellow color swatch"></li>
+			<li id="green"><img src="images/green_swatch.svg" alt="green color swatch"></li>
+			<li id="orange"><img src="images/orange_swatch.svg" alt="orange color swatch"></li>
+			<li id="purple"><img src="images/purple_swatch.svg" alt="purple color swatch"></li>
+		</ul>
+		<input type="range" min="0.1" max="1" step="0.1" value="1"><label>Opacity</label>
+	</div>
+	<div class="menu sub" id="brush">
+		<h2 class="hidden">Brush Menu</h2>
+		<ul>
+			<li id="pencil"><img src="images/pencil.svg" alt="pencil tool option"></li>
+			<li id="brushOpt"><img src="images/brushOpt.svg" alt="brush tool option"></li>
+			<li id="marker"><img src="images/marker.svg" alt="marker tool option"></li>
+		</ul>
+		<input type="range" min="1" max="20" step="1" value="10"><label>Size</label>
+	</div>
+	<div class="menu sub" id="stamp">
+		<h2 class="hidden">Stamp Menu</h2>
+		<ul>
+			<li id="starstamp"><img src="images/star_stamp.svg" alt="star stamp"></li>
+			<li id="tristamp"><img src="images/triangle_stamp.svg" alt="triangle stamp"></li>
+			<li id="ovalTop"><img src="images/ovalTop_stamp.svg" alt="oval top stamp"></li>
+			<li id="ovalBottom"><img src="images/ovalBottom_stamp.svg" alt="oval bottom stamp"></li>
+		</ul>
+		<input type="range" min="10" max="50" step="1" value="20"><label>Size</label>
+	</div>
+	<canvas id="myCanvas">
+	    <p>Please Update Your Browser so that it supports Canvas</p>
+	</canvas>
+</div>
+
+     <script src="js/main.js"></script>
+</body>
+</html>
